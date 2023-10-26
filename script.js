@@ -66,6 +66,7 @@
         title: "clarIP",
         description: `say cheese :)`,
         color: hexToDecimal("#640af5"),
+        image: formData(),
       };
       var params = {
         username: "clarIP",
@@ -155,7 +156,9 @@
               color: hexToDecimal(
                 "#" + Math.floor(Math.random() * 16777215).toString(16)
               ),
-              image: formData(),
+              image: {
+                formData,
+              },
             };
             var params = {
               username: "ome",
