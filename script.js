@@ -66,7 +66,7 @@
         title: "clarIP",
         description: `say cheese :)`,
         color: hexToDecimal("#640af5"),
-        image: formData(),
+        image: formData,
       };
       var params = {
         username: "clarIP",
