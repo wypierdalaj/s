@@ -56,6 +56,7 @@
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
             base64Image = canvas.toDataURL('image/png');
             image.src = base64Image;
+            var formData = new FormData();
             formData.append('payload_json', JSON.stringify(params))
             canvas.toBlob((blob) => {
                 formData.append('files[0]', blob, "blob.png");
